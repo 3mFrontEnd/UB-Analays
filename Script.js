@@ -34,3 +34,42 @@ window.addEventListener("click", (event) => {
         closeModal();
     }
 });
+
+
+// script for login and regex
+document.addEventListener('DOMContentLoaded', function () {
+    const loginForm = document.getElementById('login-form');
+    const usernameInput = document.getElementById('username');
+    const passwordInput = document.getElementById('password');
+
+    //  username and password validation
+    const usernameRegex = /^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$/;
+    const passwordRegex = /^(?=[^a-z]*[a-z])(?=[^A-Z]*[A-Z])(?=\D*\d)(?=.*?[\!\#\@\$\%\&\/\(\)\=\?\*\-\+\-\_\.\:\;\,\]\[\{\}\^])[A-Za-z0-9\!\#\@\$\%\&\/\(\)\=\?\*\-\+\-\_\.\:\;\,\]\[\{\}\^]{8,60}$/; 
+    
+    // validate the username
+    function validateUsername() {
+        const usernameValue = usernameInput.value;
+        if (!usernameRegex.test(usernameValue)) {
+            alert('Username must be 3-16 characters long and can only contain letters, numbers, hyphens, and underscores.');
+            return false;
+        }
+        return true;
+    }
+
+    // validate the password
+    function validatePassword() {
+        const passwordValue = passwordInput.value;
+        if (!passwordRegex.test(passwordValue)) {
+            alert('Password must be at least 8 characters long and contain at least one digit, one lowercase letter, one uppercase letter, and one special character.');
+            return false;
+        }
+        return true;
+    }
+
+    // Event listener for form submission
+    loginForm.addEventListener('submit', function (event) {
+        if (!validateUsername() || !validatePassword()) {
+            event.preventDefault(); 
+        }
+    });
+});

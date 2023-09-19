@@ -1,4 +1,4 @@
-/* basic style */
+/* some basic styling */
 body, html {
     margin: 0;
     padding: 0;
@@ -20,14 +20,14 @@ body, html {
     z-index: -1;
 }
 
-/* Header  */
+/* Header styles */
 header {
     position: sticky;
     top: 0;
     background-color: #b1dce7;
     color: black;
     padding: 10px 0;
-    z-index: 100; /* Ensure the header appears above other content */
+    z-index: 100; 
 }
 
 nav {
@@ -77,18 +77,24 @@ nav {
     border-radius: 5px;
     cursor: pointer;
 }
+
+#login-btn a {
+    text-decoration: none;
+}
+
+
 #login-btn:hover{
     background-color: #fb3104;
 }
 
-/* Hamburger menu */
+/* Hamburger menu icon */
 .menu-icon {
     display: none;
     cursor: pointer;
     font-size: 24px;
 }
 
-/* Main */
+/* Main content styles */
 main {
     max-width: 1200px;
     margin: 20px auto;
@@ -115,7 +121,7 @@ main h3{
     min-height: 100vw;
 }
 
-/* Footer  */
+/* Footer styles */
 footer {
     position: absolute;
     bottom: 0;
@@ -147,7 +153,7 @@ footer {
     color: #000000;
 }
 
-/* Modal */
+/* Modal styles */
 .modal {
     display: none;
     position: fixed;
