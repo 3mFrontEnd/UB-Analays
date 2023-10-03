@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="button-container">
+            <button class="button selected" id="button1">BIOCHEMISTRY</button>
+            <button class="button" id="button2">HEMATOLOGY</button>
+            <button class="button" id="button3">URINE</button>
+        </div>
+        <form id="form1" class="show">
+            
+            <h2>BIOCHEMISTRY</h2>
+            <div class="input-group">
+                <label for="input1">FSB:</label>
+                <input type="number" id="input1" name="input1">
+                <label for="input1After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input2">UREA:</label>
+                <input type="number" id="input2" name="input2">
+                <label for="input2After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input3">CREATININE:</label>
+                <input type="number" id="input3" name="input3">
+                <label for="input3After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input4">CHOLESTEROL:</label>
+                <input type="number" id="input4" name="input4">
+                <label for="input4After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input5">TRIGLYCERIDE:</label>
+                <input type="number" id="input5" name="input5">
+                <label for="input5After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input6">HDL:</label>
+                <input type="number" id="input6" name="input6">
+                <label for="input6After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input7">LDL_CH:</label>
+                <input type="number" id="input7" name="input7">
+                <label for="input7After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input8">ALT(SGPT):</label>
+                <input type="number" id="input8" name="input8">
+                <label for="input8After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input9">ALT(SGOT):</label>
+                <input type="number" id="input9" name="input9">
+                <label for="input9After">?</label>
+            </div>
+
+
+
+
+        </form>
+        <form id="form2">
+            
+            <h2>HEMATOLOGY</h2>
+            <div class="input-group">
+                <label for="input1">WCB:</label>
+                <input type="number" id="input1" name="input1">
+                <label for="input1After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input2">RBC:</label>
+                <input type="number" id="input2" name="input2">
+                <label for="input2After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input3">HEMOGLOBIN:</label>
+                <input type="number" id="input3" name="input3">
+                <label for="input3After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input4">HEMATOCRIT:</label>
+                <input type="number" id="input4" name="input4">
+                <label for="input4After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input5">PLATELETS:</label>
+                <input type="number" id="input5" name="input5">
+                <label for="input5After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input6">NEUT:</label>
+                <input type="number" id="input6" name="input6">
+                <label for="input6After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input7">EO:</label>
+                <input type="number" id="input7" name="input7">
+                <label for="input7After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input8">BASO:</label>
+                <input type="number" id="input8" name="input8">
+                <label for="input8After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input9">LYMP:</label>
+                <input type="number" id="input9" name="input9">
+                <label for="input9After">?</label>
+            </div>
+            <div class="input-group">
+                <label for="input10">MONO:</label>
+                <input type="number" id="input10" name="input10">
+                <label for="input10After">?</label>
+            </div>
+        </form>
+        <form id="form3">
+            
+            <h2>URINE</h2>
+            <p>This is the content of Form 3.</p>
+        </form>
+    </div>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <div id="modal-text"></div>
+        </div>
+    </div>
+
+    <!-- Modal for page reload message -->
+    <div id="reload-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-reload-modal">&times;</span>
+            <p>This App can use by the people between 20 to 50 years old that they do not have any medical problem.</p>
+        </div>
+    </div>
+    
+    <script src="./dashboard.js"></script>
+</body>
+
+</html>
